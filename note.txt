@@ -1,0 +1,4 @@
+python manage.py tailwind install
+python manage.py tailwind build
+
+For the above to work you need to download nodejs from the net and install it. Don't change the default location

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunaTrack</title>
+  <link href="{% static 'css/dist/styles.css' %}" rel="stylesheet">
+</head>
+<body class="bg-light-lavender text-gray-800">
+  <header class="bg-header-bg shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold text-primary-text">LunaTrack</a>
+      <div>
+        <a href="/login" class="bg-primary-pink text-white px-4 py-2 rounded mr-2">Login</a>
+        <a href="/signup" class="bg-secondary-white text-primary-text px-4 py-2 rounded border border-primary-text">Signup</a>
+      </div>
+    </div>
+  </header>
+  {% block content %}{% endblock %}
+  <footer class="bg-footer-bg text-white text-center py-4">
+    © Pâte à Choux 2024. All Rights Reserved.
+  </footer>
+</body>
+</html>
